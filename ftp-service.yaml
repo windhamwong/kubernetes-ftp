@@ -8,6 +8,10 @@ spec:
   type: NodePort
   ports:
     - port: 21
-      nodePort: 30080
+      nodePort: 30021
+    - port: 30021
+      nodePort: 30022
+    - port: 30023
+      nodePort: 30023
   selector:
     app: my-ftp
