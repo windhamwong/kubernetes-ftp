@@ -7,11 +7,14 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 21
+    - name: direct-port
+      port: 21
       nodePort: 30021
-    - port: 30022
+    - name: port01
+      port: 30022
       nodePort: 30022
-    - port: 30023
+    - name: port02
+      port: 30023
       nodePort: 30023
   selector:
     app: my-ftp
