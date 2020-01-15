@@ -1,8 +1,11 @@
-apiVersion: apps/v1beta1 # for versions before 1.6.0 use extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-ftp
 spec:
+  selector:
+    matchLabels:
+      app: my-ftp
   replicas: 1
   template:
     metadata:
